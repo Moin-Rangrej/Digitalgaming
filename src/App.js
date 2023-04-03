@@ -9,6 +9,7 @@ import Career from './components/Career';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
 import BoostrapHeader from './components/BoostrapHeader';
+import Game2 from './components/Game2';
 // import { Route, Routes } from 'react-router-dom';
 
 
@@ -16,7 +17,6 @@ function App() {
   return (
     <div className="App">
     <BoostrapHeader/>
-      {/* <Header />  */}
       <Home />
       <Games />
       <Aboutus />

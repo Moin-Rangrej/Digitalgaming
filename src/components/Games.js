@@ -16,7 +16,7 @@ const Games = () => {
         <div className='gameBoxes'>
           {/* First Game Box */}
           <div className='gameBox'>
-            <img src={Game1} alt="Boy play Game" className='Game1' />
+            <img src={Game1} alt="Boy play Game" className='Game1'/>
             <h1 className='gameTitle'>Game Title</h1>
             <p className='boyGamepara'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque. Bibendum dolor posuere felis nulla.
@@ -28,7 +28,7 @@ const Games = () => {
           </div>
           {/* Second Game box */}
           <div className='gameBox2'>
-          <img src={Game2} alt="Game Screens" className='image2' />
+          <img src={Game2} alt="Game Screens" className='Game2'/>
           <h1 className='gameTitle'>Game Title</h1>
           <p className='boyGamepara'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque. Bibendum dolor posuere felis nulla.

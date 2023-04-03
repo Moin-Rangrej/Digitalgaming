@@ -9,17 +9,17 @@ const Contactus = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             </p>
             <div className='contactForm'>
-            <section className='userName'>
+            <div className='userName'>
                 <input type='text' placeholder='First Name' className='firstName'/>
                 <input type='text' placeholder='Last Name' className='lastName'/>
-            </section>
-            <section className='userphoneEmail'>
+            </div>
+            <div className='userphoneEmail'>
                 <input type='text' placeholder='Phone' className='firstName'/>
                 <input type='text' placeholder='Email' className='lastName'/>
-            </section>
-            <section className='userMessage'>
+            </div>
+            <div className='userMessage'>
                 <textarea placeholder='Message' className='message'/>
-            </section>
+            </div>
             <button className='sendMessage'>Send Message</button>
             </div>
         </div>

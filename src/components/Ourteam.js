@@ -13,7 +13,7 @@ const Ourteam = () => {
         <p className='ourteamPara'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         </p>
-        <div className='teamMembers container'>
+        <div className='teamMembers '>
           <div className='member1'>
             <img src={Member1} alt="Team member1" />
             <h2 className='memberName'>Rebecca Martinez</h2>

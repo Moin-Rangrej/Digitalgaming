@@ -30,6 +30,7 @@ const BoostrapHeader = () => {
         background: #D97D52;
         border-radius: 6px;
     }
+   
 `}</style>
 
 
@@ -37,7 +38,7 @@ const BoostrapHeader = () => {
 
             { /* Navbar start here */}
 
-            <nav className="navbar navbar-expand-lg navbar navbar-light ml-auto align-content-lg-center sticky-top container" style={{ backgroundColor: "#FFFFFF" }}>
+            <nav className="navbar navbar-expand-lg navbar navbar-light ml-auto fixed-top border px-5 " style={{ backgroundColor: "#FFFFFF" }}>
                 <img src={Logo} alt="BookImg" />
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
