@@ -7,7 +7,7 @@ import Appstore from '../img/Appstore.jpg'
 const Games = () => {
   return (
     <>
-      <div className='gameBackground container'>
+      <div className='gameBackground containe'>
         <h1 className='gameHeading'>Games</h1>
         <p className='gamePara'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
