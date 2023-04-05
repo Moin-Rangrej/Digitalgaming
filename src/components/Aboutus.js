@@ -2,6 +2,8 @@ import React from 'react'
 import Person from '../img/person.jpg'
 
 const Aboutus = () => {
+   
+
   return (
     <>
       <div className='aboutUs container' id='about'>

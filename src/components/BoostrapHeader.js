@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../img/logo.svg'
-
+import { motion } from 'framer-motion'
 
 const BoostrapHeader = () => {
     
@@ -44,11 +44,12 @@ const BoostrapHeader = () => {
    
 `}</style>
 
-
-
-
-            { /* Navbar start here */}
-
+        { /* Navbar start here */}
+            <motion.div
+                initial={{opacity: 0, y : -100}}
+                animate = {{opacity: 1 ,y : 0}}
+                transition={{type: 'spring', damping: 200}}
+            >
             <nav className="navbar navbar-expand-lg navbar navbar-light ml-auto fixed-top border px-5 " style={{ backgroundColor: "#FFFFFF" }}>
                 <img src={Logo} alt="BookImg" />
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,25 +59,49 @@ const BoostrapHeader = () => {
                 <div className="collapse navbar-collapse p-2" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto text-center pagelist">
                         <li className="nav-item active">
-                            <a className="nav-link" href='#home'>Home <span className="sr-only">(current)</span></a>
+                            <motion.a className="nav-link" href='#home'
+                                whileHover={{scale: 1.3}}
+                                transition={{ type:'spring' , stiffness: 300}}
+                            >Home <span className="sr-only">(current)</span></motion.a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href='#game'>Games</a>
+                            <motion.a className="nav-link" href='#game'
+                                whileHover={{scale: 1.3}}
+                                transition={{ type:'spring' , stiffness: 300}}
+                            >Games</motion.a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href='#about'>About us</a>
+                            <motion.a className="nav-link" href='#about'
+                                whileHover={{scale: 1.3}}
+                                transition={{ type:'spring' , stiffness: 300}}
+                            >About us</motion.a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"  href='#team' >Our Team</a>
+                            <motion.a className="nav-link"  href='#team' 
+                                whileHover={{scale: 1.3}}
+                                transition={{ type:'spring' , stiffness: 300}}
+                            >Our Team</motion.a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href='#career' >Career</a>
+                            <motion.a className="nav-link" href='#career' 
+                                whileHover={{scale: 1.3}}
+                                transition={{ type:'spring' , stiffness: 300}}
+                            >Career</motion.a>
                         </li>
-                        <button className="btn btn-group-lg contactus btn-sm btn-block" href="#contact">Contact us</button>
+                        <motion.button className="btn btn-group-lg contactus btn-sm btn-block" href="#contact"
+                        initial={{opacity: 0}}
+                        animate={{ opacity: 1}}
+                        whileHover={{
+                            scale: 1.1,
+                            boxShadow: '0px 0px 10px black'
+                        }}
+                        >Contact us</motion.button>
                     </ul>
 
                 </div>
             </nav>
+            </motion.div>
+
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous" />
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous" />
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous" />
