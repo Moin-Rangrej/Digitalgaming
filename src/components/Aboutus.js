@@ -4,7 +4,7 @@ import Person from '../img/person.jpg'
 const Aboutus = () => {
   return (
     <>
-      <div className='aboutUs container'>
+      <div className='aboutUs container' id='about'>
         <h1 className='aboutusHeading'>About Us</h1>
         <p className='aboutusPara'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

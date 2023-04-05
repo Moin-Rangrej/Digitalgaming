@@ -13,12 +13,12 @@ const Header = () => {
         </div>
         <div className='col-7'>
             <div className='pages'>
-                <p>Home</p> 
+                <p>Homjjjjje</p> 
                 <p>Games</p>
                 <p>About us</p>
                 <p>Our Team</p>
                 <p>Career</p>
-                <button className='contatus' onClick={() => alert('Press Contact us')}>Contact Us</button>
+                <button className='contatus'>Contact Us</button>
             </div>
         </div>
      </div> 

@@ -3,7 +3,7 @@ import React from 'react'
 const Contactus = () => {
   return (
     <>
-        <div className='contactbg'>
+        <div className='contactbg' id='contact'>
             <h1 className='contactHeading'>Contact Us</h1>
             <p className='contactPara'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

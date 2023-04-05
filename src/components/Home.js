@@ -1,11 +1,12 @@
 import React from 'react'
 // import Digitalgame from '../img/background1.jpg'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
     <>
-      <div className='Digitalgame'>
-        <span className='Digitalgame-Heading'>Digital Gaming NFTs</span>
+      <div className='Digitalgame' id='home'>
+        <motion.span className='Digitalgame-Heading' initial={false} animate={{x: 100}}>Digital Gaming NFTs</motion.span>
         <p className='Digitalgame-para'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque.
           Bibendum dolor posuere felis nulla. In augue

@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo from '../img/logo.svg'
+
+
 const BoostrapHeader = () => {
+    
     return (
         <>
-
-
-
             { /* Required meta tags */}
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -58,21 +58,21 @@ const BoostrapHeader = () => {
                 <div className="collapse navbar-collapse p-2" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto text-center pagelist">
                         <li className="nav-item active">
-                            <a className="nav-link">Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href='#home'>Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">Games</a>
+                            <a className="nav-link" href='#game'>Games</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">About us</a>
+                            <a className="nav-link" href='#about'>About us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">Our Team</a>
+                            <a className="nav-link"  href='#team' >Our Team</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">Career</a>
+                            <a className="nav-link" href='#career' >Career</a>
                         </li>
-                        <button className="btn btn-group-lg contactus btn-sm btn-block">Contact us</button>
+                        <button className="btn btn-group-lg contactus btn-sm btn-block" href="#contact">Contact us</button>
                     </ul>
 
                 </div>

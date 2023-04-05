@@ -8,7 +8,7 @@ import Member4 from '../img/member4.jpg'
 const Ourteam = () => {
   return (
     <>
-      <div className='outTeambg'>
+      <div className='outTeambg' id='team'>
         <h1 className='ourteamHeading'>Our Team</h1>
         <p className='ourteamPara'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
