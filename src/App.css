@@ -5,7 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  /* overflow-x: hidden; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 /* Header page css */
@@ -53,13 +61,13 @@
 
 /* Home page css start here */
 
-.Digitalgame{
+.Digitalgame {
   background: url('./img/background1.jpg');
   width: 100%;
   height: 100vh;
   background-size: cover;
-  margin-top: 35px; 
-  background-repeat: no-repeat; 
+  margin-top: 35px;
+  background-repeat: no-repeat;
 }
 
 .Digitalgame-Heading {
@@ -91,50 +99,65 @@
   margin-left: 7rem;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-  .Digitalgame{
+/* 760 990 || 375 480 */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .Digitalgame {
     background-size: contain;
-    width: 100%;
     height: 40vh;
   }
 
   .Digitalgame-Heading {
     top: 4rem;
     left: 2rem;
-    font-size:20px;
-  }
-  .Digitalgame-para {
     font-size: 10px;
+  }
+
+  .Digitalgame-para {
+    font-size: 7px;
     margin-top: 4rem;
     margin-left: 2rem;
-    width: 75%;
+    width: 45%;
   }
+
   .Digitalgame-btn {
-    width: 60px;
-    height: 20px;
-    font-size: 10px;
+    width: 50px;
+    height: 15px;
+    font-size: 7px;
     border: none;
     margin-left: 2rem;
-    margin-top: -10px;
+    margin-top: -1px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .Digitalgame{
-    width: auto;
-    height: 80vh;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .Digitalgame {
+    height: 100vh;
+    background-size: contain;
   }
 
   .Digitalgame-Heading {
-    font-size: 35px;
+    position: relative;
+    top: 10rem;
+    left: 3rem;
+    font-size: 25px;
   }
+
   .Digitalgame-para {
-    font-size: 15px;
+    font-size: 12px;
+    width: 40%;
+    margin-top: 10rem;
+    margin-left: 3rem;
   }
+
   .Digitalgame-btn {
+
     width: 100px;
-    height: 40px;
+    height: 35px;
+    border-radius: 6px;
+    margin-left: 3rem;
   }
+
 }
 
 
@@ -175,6 +198,7 @@
 
 .Game1 {
   height: 415px;
+  width: auto;
   margin-left: 30px;
 }
 
@@ -207,86 +231,111 @@
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .gameBackground {
-    height: 1000px;
-    width: 100%;
-    margin-left: -2px;
+    height: auto;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: -120px;
   }
+
   .gameBoxes {
     flex-wrap: wrap;
   }
+
+  .gameHeading {
+    font-size: 1.375rem;
+    padding: 35px;
+  }
+
   .Game1 {
     height: 200px;
-    margin-left: 50px;
+    width: 80%;
+    margin-left: 35px;
   }
+
   .gamePara {
     font-size: 10px;
-    margin-left:1rem;
+    margin-left: 1rem;
     text-align: center;
-    width: 20rem;
+    width: 18rem;
     margin-top: -2rem;
   }
+
   .gameTitle {
-    margin-left: 100px;
-    margin-top: 10px;
-    font-size: 15px;
+    margin-left: 55px;
+    margin-top: 1px;
+    font-size: 16px;
   }
+
   .boyGamepara {
     font-size: 12px;
     width: 18rem;
+    margin-left: 55px;
+    line-height: 20px;
   }
+
   .googlePlay {
-    height: 40px;
+    height: 20px;
   }
-  .appStore{
-    height: 40px;
+
+  .appStore {
+    height: 20px;
   }
-  
+
   .Game2 {
     height: 200px;
-    margin-left: 50px;
+    width: 80%;
+    margin-left: 35px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .gameBackground {
-    height: 1300px;
-    width: 100%;
-    margin-left: -2px;
+    height: 100%;
+    width: 80%;
+    margin-left: 5rem;
+    margin-top: -42rem;
   }
+
   .gamePara {
     font-size: 14px;
-    margin-left:5rem;
+    margin-left: 5rem;
     text-align: center;
     width: 30rem;
   }
+
   .gameBoxes {
     flex-wrap: wrap;
   }
-  .Game1{
+
+  .Game1 {
     height: 350px;
     width: auto;
   }
+
   .gameTitle {
     font-size: 20px;
   }
+
   .boyGamepara {
     font-size: 14px;
   }
+
   .googlePlay {
     height: 40px;
   }
-  .appStore{
+
+  .appStore {
     height: 40px;
   }
-  .Game2{
+
+  .Game2 {
     height: 350px;
     margin-left: 30px;
   }
- 
-
 }
+
 
 /* Aboutus css start here */
 
@@ -300,7 +349,7 @@
 
 .aboutusPara {
   text-align: center;
-  width: 42rem;
+  width: 35rem;
   margin-left: 15rem;
   margin-top: -2rem;
   font-weight: 500;
@@ -321,49 +370,59 @@
   width: 33rem;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-  .aboutusHeading{
-    font-size: 20px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .aboutusHeading {
+    font-size: 1.375rem;
+    padding: 35px;
   }
-  .imagePara{
+
+  .imagePara {
     flex-wrap: wrap;
   }
-  .aboutusPara{
+
+  .aboutusPara {
     font-size: 12px;
     width: 20rem;
     text-align: center;
-    margin-left: 0rem;
+    margin-left: 1rem;
+    line-height: 20px;
   }
-  .imagePara img{
-    width: 100% ;
+
+  .imagePara img {
+    width: 110%;
     height: 100%;
     margin-left: -20px;
   }
-  .aboutusPara2{
+
+  .aboutusPara2 {
     width: 100%;
     font-size: 14px;
     text-align: justify;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .imagePara {
     flex-wrap: wrap;
   }
+
   .aboutusPara {
     margin-left: 0rem;
     width: 35rem;
   }
-  .aboutusHeading{
+
+  .aboutusHeading {
     font-size: 20px;
   }
-  .aboutusPara2{
+
+  .aboutusPara2 {
     width: 100%;
     font-size: 14px;
-    
+
   }
-  .imagePara img{
-    width: auto ;
+
+  .imagePara img {
+    width: auto;
     height: auto;
   }
 }
@@ -427,47 +486,76 @@
   justify-content: space-around;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-  .outTeambg{
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .outTeambg {
     margin-top: 20px;
     width: auto;
-    height: 240vh;
+    height: auto;
   }
+
   .ourteamPara {
-    margin-left: 0rem;
+    margin-left: 1.5rem;
     margin-top: -2rem;
     width: 22rem;
-    font-size: 12px;
+    font-size: 11px;
   }
+
   .teamMembers {
     flex-wrap: wrap;
-    margin-left: 40px;;
+    margin-left: 40px;
+    ;
   }
-  .member1{
+
+  .member1 {
     margin-top: 10px;
   }
-  .member1 img{
+
+  .member1 img {
     height: 250px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
+
+  .memberName {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+
+  .memberPosition {
+    font-size: 15px;
+    margin-left: 55px;
+    margin-top: 5px;
+  }
+
+  .socialIcon {
+    width: 110px;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .outTeambg{
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .outTeambg {
     margin-top: 20px;
     width: auto;
     height: 110vh;
   }
+
   .teamMembers {
     flex-wrap: wrap;
     margin-left: 90px;
   }
+
   .ourteamPara {
     margin-left: 3rem;
     margin-top: -2rem;
   }
-  .teamMembers .member1{
-      margin-top: 20px;
+
+  .teamMembers .member1 {
+    margin-top: 20px;
   }
 }
 
@@ -485,7 +573,7 @@
 .careerPara {
   text-align: center;
   width: 42rem;
-  margin-left: 20rem;
+  margin-left: 14rem;
   margin-top: -2rem;
   font-weight: 500;
   font-size: 16px;
@@ -506,7 +594,7 @@
   font-weight: 800;
   font-size: 30px;
   letter-spacing: 0.2px;
-  padding: 30px;
+  padding: 26px;
 }
 
 .cardPara {
@@ -515,8 +603,8 @@
   font-size: 15px;
   letter-spacing: 0.3px;
   line-height: 30px;
-  padding: 26px;
-  margin-top: -40px;
+  padding: 24px;
+  margin-top: -39px;
 }
 
 .cardbtn {
@@ -534,53 +622,72 @@
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-  .card1{
-    width: 350px;
-    height: 350px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .careerHeading {
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  .card1 {
+    width: 300px;
+    height: 300px;
   }
 
   .cardPara {
-    font-size: 13px;
-    letter-spacing: 0.1px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    padding: 10px;
+    margin-top: -39px;
+    margin-left: 20px;
   }
 
-  .careerHeading{
-    padding: 35px; 
-  }
   .cardbtn {
     width: 100px;
     height: 30px;
-  } 
+  }
 
   .careerPara {
     margin-left: 0rem;
     width: 22rem;
     font-size: 10px;
   }
-  .cardHeading{
-    font-size: 25px;
+
+  .cardHeading {
+    font-size: 20px;
   }
-  .careerCards{
+
+  .careerCards {
     flex-wrap: wrap;
   }
-  .careerCards .card1{
-    margin-top: 30px;
+
+  .careerCards .card1 {
+    margin-top: 20px;
+  }
+
+  .cardbtn {
+    border: none;
+    width: 100px;
+    height: 35px;
+    margin-top: -12px;
+    margin-left: 22px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .careerCards{
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .careerCards {
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+
   .careerPara {
     margin-left: 0rem;
     width: 35rem;
   }
-  .careerCards .card1{
+
+  .careerCards .card1 {
     margin-top: 40px;
   }
 }
@@ -603,10 +710,10 @@
 }
 
 .contactPara {
-  text-align: center20rem;
+  text-align: center;
   width: 42rem;
   margin-left: 28rem;
-  margin-top: -1rem;
+  margin-top: -2rem;
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
@@ -687,53 +794,110 @@
 }
 
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .contactbg {
     margin-top: 20px;
     padding-top: 40px;
     width: 100%;
-    height: 120vh;
+    height: 110vh;
   }
+
+  .contactForm {
+    margin-top: -30px;
+  }
+
+  .contactHeading {
+    color: #D97D52;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px 0px 35px;
+  }
+
   .contactPara {
     width: 20rem;
-    margin-top: -2rem;
-    margin-left: 1rem;
+    margin-top: -1.5rem;
+    margin-left: 2rem;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
   }
+
   .userName {
     flex-wrap: wrap;
+    width: 97%;
+    margin-left: 5px;
   }
-  .lastName{
+
+  .lastName {
     margin-top: 20px;
   }
+
   .userphoneEmail {
     flex-wrap: wrap;
+    width: 97%;
+    margin-left: 5px;
+    margin-top: 20px;
   }
+
   .sendMessage {
-    margin-left: 6rem;
+    width: 140px;
+    height: 45px;
+    margin-left: 8rem;
+    margin-top: 20px;
   }
+
   .message {
     width: 900px;
     height: 100px;
     color: red;
   }
+
+  .userMessage {
+    margin: auto;
+    margin-top: 30px;
+    width: 97%;
+    margin-top: 20px;
+  }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .contactbg {
     margin-top: 20px;
     padding-top: 40px;
-    width: 100%;
-    height: 100vh;
+    height: 60vh;
   }
+
+  .contactForm {
+    margin-top: -20px;
+  }
+
+  .contactHeading {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+
   .contactPara {
     margin-left: 5rem;
     text-align: center;
   }
-  .sendMessage {
-    margin-left: 18rem;
+
+  .firstName {
+    padding: 20px;
   }
+
+  .lastName {
+    padding: 20px;
+  }
+
+  .sendMessage {
+    width: 130px;
+    height: 40px;
+    margin-left: 20rem;
+    margin-top: 30px;
+  }
+
   .message {
     width: 700px;
   }
@@ -743,7 +907,7 @@
 
 .footerSize {
   width: 1366px;
-  height: 201px;
+  height: 190px;
   background: #FFFFFF;
 }
 
@@ -765,14 +929,14 @@
 .footerIcons {
   display: flex;
   justify-content: space-around;
-  width: 330px;
-  margin-left: 150px;
+  width: 400px;
+  margin-left: 350px;
   margin-top: 15px;
 }
 
 .copyRight {
   text-align: center;
-  margin-top: 45px;
+  margin-top: 40px;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -781,12 +945,39 @@
   mix-blend-mode: normal;
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
-      .footerIcons{
-        width: 200px;
-        margin-left: -15px;
-      }
-      .footerPages p{
-        font-size: 14px;
-      }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .footerSize {
+    height: 100px;
+  }
+
+  .footerIcons {
+    width: 300px;
+    margin-left: 35px;
+  }
+
+  .footerPages {
+    margin-top: 0px;
+  }
+
+  .footerPages p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .copyRight {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footerIcons {
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 15px;
+  }
 }
