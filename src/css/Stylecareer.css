@@ -1,0 +1,130 @@
+.careerHeading {
+    color: #D97D52;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 45px;
+  }
+  
+  .careerPara {
+    text-align: center;
+    width: 42rem;
+    margin-left: 14rem;
+    margin-top: -2rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8795AA;
+  }
+  
+  .card1 {
+    width: 367px;
+    height: 399px;
+    background: #F5F5F5;
+    box-shadow: 2px 3px 8px #D97D52;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  
+  .cardHeading {
+    color: #000000;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    padding: 26px;
+  }
+  
+  .cardPara {
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    padding: 24px;
+    margin-top: -39px;
+  }
+  
+  .cardbtn {
+    border: none;
+    width: 131px;
+    height: 52px;
+    background: #D97D52;
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 22px;
+  }
+  
+  .careerCards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  
+    .careerHeading {
+      font-size: 25px;
+      padding: 30px;
+    }
+  
+    .card1 {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .cardPara {
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+      padding: 10px;
+      margin-top: -39px;
+      margin-left: 20px;
+    }
+  
+    .cardbtn {
+      width: 100px;
+      height: 30px;
+    }
+  
+    .careerPara {
+      margin-left: 0rem;
+      width: 22rem;
+      font-size: 10px;
+    }
+  
+    .cardHeading {
+      font-size: 20px;
+    }
+  
+    .careerCards {
+      flex-wrap: wrap;
+    }
+  
+    .careerCards .card1 {
+      margin-top: 20px;
+    }
+  
+    .cardbtn {
+      border: none;
+      width: 100px;
+      height: 35px;
+      margin-top: -12px;
+      margin-left: 22px;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .careerCards {
+      flex-wrap: wrap;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .careerPara {
+      margin-left: 0rem;
+      width: 35rem;
+    }
+  
+    .careerCards .card1 {
+      margin-top: 40px;
+    }
+  }
+  

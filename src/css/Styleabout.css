@@ -1,0 +1,87 @@
+.aboutusHeading {
+    color: #D97D52;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 35px;
+  }
+  
+  .aboutusPara {
+    text-align: center;
+    width: 35rem;
+    margin-left: 15rem;
+    margin-top: -2rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8795AA;
+  }
+  
+  .imagePara {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aboutusPara2 {
+    color: #404040;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    width: 33rem;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .aboutusHeading {
+      font-size: 1.375rem;
+      padding: 35px;
+    }
+  
+    .imagePara {
+      flex-wrap: wrap;
+    }
+  
+    .aboutusPara {
+      font-size: 12px;
+      width: 20rem;
+      text-align: center;
+      margin-left: 1rem;
+      line-height: 20px;
+    }
+  
+    .imagePara img {
+      width: 110%;
+      height: 100%;
+      margin-left: -20px;
+    }
+  
+    .aboutusPara2 {
+      width: 100%;
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .imagePara {
+      flex-wrap: wrap;
+    }
+  
+    .aboutusPara {
+      margin-left: 0rem;
+      width: 35rem;
+    }
+  
+    .aboutusHeading {
+      font-size: 20px;
+    }
+  
+    .aboutusPara2 {
+      width: 100%;
+      font-size: 14px;
+  
+    }
+  
+    .imagePara img {
+      width: auto;
+      height: auto;
+    }
+  }

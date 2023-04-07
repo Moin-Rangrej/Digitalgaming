@@ -4,6 +4,7 @@ import { Typewriter } from 'react-typewriting-effect'
 import { useInView } from 'react-intersection-observer'
 import { motion , useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
+import '../css/Styleabout.css'
 
 const Aboutus = () => {
     

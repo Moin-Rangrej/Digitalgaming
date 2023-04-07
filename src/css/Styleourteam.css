@@ -1,0 +1,129 @@
+.outTeambg {
+    background-image: url('../img/ourteamBG.jpg');
+    height: 105vh;
+    background-size: cover;
+  }
+  
+  .ourteamHeading {
+    color: #D97D52;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 45px;
+  }
+  
+  .ourteamPara {
+    text-align: center;
+    width: 42rem;
+    margin-left: 28rem;
+    margin-top: -1rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  
+  .socialIcon {
+    display: flex;
+    justify-content: space-around;
+    width: 130px;
+    margin-left: 60px;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  
+  .memberName {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 42px;
+  }
+  
+  .memberPosition {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 55px;
+    margin-top: 13px;
+  }
+  
+  .teamMembers {
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .outTeambg {
+      margin-top: 20px;
+      width: auto;
+      height: auto;
+    }
+  
+    .ourteamPara {
+      margin-left: 1.5rem;
+      margin-top: -2rem;
+      width: 22rem;
+      font-size: 11px;
+    }
+  
+    .teamMembers {
+      flex-wrap: wrap;
+      margin-left: 40px;
+      ;
+    }
+  
+    .member1 {
+      margin-top: 10px;
+    }
+  
+    .member1 img {
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  
+    .memberName {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+  
+    .memberPosition {
+      font-size: 15px;
+      margin-left: 55px;
+      margin-top: 5px;
+    }
+  
+    .socialIcon {
+      width: 110px;
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+  
+  
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .outTeambg {
+      margin-top: 20px;
+      width: auto;
+      height: 110vh;
+    }
+  
+    .teamMembers {
+      flex-wrap: wrap;
+      margin-left: 90px;
+    }
+  
+    .ourteamPara {
+      margin-left: 3rem;
+      margin-top: -2rem;
+    }
+  
+    .teamMembers .member1 {
+      margin-top: 20px;
+    }
+  }

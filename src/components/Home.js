@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { Typewriter } from 'react-typewriting-effect'
 import { useInView } from 'react-intersection-observer'
+import '../css/Stylehome.css'
 
 
 const Home = () => {

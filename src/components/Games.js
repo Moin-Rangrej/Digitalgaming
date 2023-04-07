@@ -7,6 +7,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { Typewriter } from 'react-typewriting-effect'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
+import '../css/Stylegame.css'
 
 const Games = () => {
 

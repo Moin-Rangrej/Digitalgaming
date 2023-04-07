@@ -7,7 +7,7 @@ import { Typewriter } from 'react-typewriting-effect'
 import { motion , useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
-
+import '../css/Styleourteam.css'
 
 
 const Ourteam = () => {

@@ -1,0 +1,79 @@
+
+/* Footer css start here */
+
+.footerSize {
+    width: 1366px;
+    height: 190px;
+    background: #FFFFFF;
+  }
+  
+  .footerPages {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  
+  .footerPages p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #0A142F;
+    opacity: 0.75;
+  }
+  
+  .footerIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin-left: 350px;
+    margin-top: 15px;
+  }
+  
+  .copyRight {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #0A142F;
+    opacity: 0.75;
+    mix-blend-mode: normal;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  
+    .footerSize {
+      height: 100px;
+    }
+  
+    .footerIcons {
+      width: 300px;
+      margin-left: 35px;
+    }
+  
+    .footerPages {
+      margin-top: 0px;
+    }
+  
+    .footerPages p {
+      font-size: 14px;
+      line-height: 15px;
+    }
+  
+    .copyRight {
+      margin-top: 25px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .footerIcons {
+      width: 400px;
+      margin-left: 150px;
+      margin-top: 15px;
+    }
+  }

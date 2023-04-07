@@ -6,8 +6,8 @@ import Mail from '../img/mail.jpg'
 import Linkedin from '../img/linkedin.jpg'
 import { motion,useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Typewriter } from 'react-typewriting-effect'
 import { useEffect } from 'react'
+import '../css/Stylefooter.css'
 
 const Footer = () => {
 

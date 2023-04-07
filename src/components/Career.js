@@ -3,6 +3,7 @@ import { motion,useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Typewriter } from 'react-typewriting-effect'
 import { useEffect } from 'react'
+import '../css/Stylecareer.css'
 
 const Career = () => {
 
