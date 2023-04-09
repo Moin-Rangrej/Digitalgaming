@@ -179,7 +179,7 @@ const Games = () => {
         }
         </p>
         {/* Game boxes */}
-        <div className='gameBoxes' ref={ref}>
+        <div className='gameBoxes'>
           {/* First Game Box */}
           <div className='gameBox'>
             <motion.img src={Game1} alt="Boy play Game" className='Game1' animate={game1} />
@@ -193,7 +193,7 @@ const Games = () => {
             <motion.img src={Appstore} alt="App Store Icon" className='appStore' animate={box1button2}/>
           </div>
           {/* Second Game box */}
-          <div className='gameBox2' ref={ref}>
+          <div className='gameBox2'>
             <motion.img src={Game2} alt="Game Screens" className='Game2' animate={game2}/>
             <motion.h1 className='gameTitle' animate={game2Title}>Game Title</motion.h1>
             <motion.p className='boyGamepara' animate={Game2para}>
