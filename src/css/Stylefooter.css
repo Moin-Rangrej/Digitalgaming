@@ -73,7 +73,25 @@
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .footerIcons {
       width: 400px;
-      margin-left: 150px;
+      margin-left: 20px;
       margin-top: 15px;
+    }
+    .footer-item{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width:769px) and (max-width: 1024px){
+  
+    .footer-item{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .footerIcons {
+      width: 300px;
+      margin-left: 35px;
     }
   }

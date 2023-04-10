@@ -1,172 +1,209 @@
 .gameBackground {
-    background: #FFFFFF;
-    height: 872px;
-    width: 1140px;
-    box-shadow: 0px 0px 30px #D97D52;
-    border-radius: 14px;
-    margin-top: -80px;
-    margin-left: 200px;
+  background: #FFFFFF;
+  height: 120vh;
+  width: 1140px;
+  box-shadow: 0px 0px 30px #D97D52;
+  border-radius: 14px;
+  margin-top: -80px;
+  margin-left: 200px;
+}
+
+.gameHeading {
+  color: #D97D52;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px;
+}
+
+.gamePara {
+  text-align: center;
+  width: 40rem;
+  margin-left: 16rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: #8795AA;
+}
+
+.gameBoxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Game1 {
+  height: 415px;
+  width: auto;
+  margin-left: 30px;
+}
+
+.Game2 {
+  height: 415px;
+}
+
+.gameTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #D97D52;
+  margin-left: 65px;
+  padding: -1px;
+  margin-top: -35px;
+}
+
+.boyGamepara {
+  color: #8795AA;
+  font-size: 18px;
+  font-weight: 500;
+  width: 30rem;
+  margin-left: 65px;
+}
+
+.googlePlay {
+  margin-left: 4rem;
+}
+
+.appStore {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .gameBackground {
+    height: auto;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: -105px;
   }
-  
+
+  .gameBoxes {
+    flex-wrap: wrap;
+  }
+
   .gameHeading {
-    color: #D97D52;
-    font-size: 1.875rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 50px;
+    font-size: 1.375rem;
+    padding: 35px;
   }
-  
+
+  .Game1 {
+    height: 188px;
+    width: auto;
+    /* margin-left: 17px; */
+  }
+
+  .gamePara {
+    font-size: 8px;
+    margin-left: 1rem;
+    text-align: center;
+    width: auto;
+    margin-top: -2rem;
+  }
+
+  .gameTitle {
+    margin-left: 50px;
+    margin-top: 1px;
+    font-size: 16px;
+  }
+
+  .boyGamepara {
+    font-size: 12px;
+    width: 18rem;
+    margin-left: 50px;
+    line-height: 20px;
+  }
+
+  .googlePlay {
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 3rem;
+  }
+
+  .appStore {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Game2 {
+    height: 188px;
+    width: auto;
+    margin-left: 17px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gameBackground {
+    height: 100%;
+    width: 80%;
+    margin-left: 5rem;
+    margin-top: -25rem;
+  }
+
+  .gameHeading{
+    padding: 20px;
+  }
+
+
+  .gamePara {
+    font-size: 14px;
+    margin-left: 0rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .gameBoxes {
+    flex-wrap: wrap;
+  }
+
+  .Game1 {
+    height: 350px;
+    width: auto;
+  }
+
+  .gameTitle {
+    font-size: 20px;
+  }
+
+  .boyGamepara {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .googlePlay {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .appStore {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .Game2 {
+    height: 350px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+  .gameBackground {
+    margin-top: -285px;
+    height: auto;
+  }
   .gamePara {
     text-align: center;
-    width: 40rem;
-    margin-left: 16rem;
+    width: auto;
+    margin-left: 2rem;
     font-weight: 500;
     font-size: 16px;
     color: #8795AA;
   }
-  
   .gameBoxes {
-    display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
-  
-  .Game1 {
-    height: 415px;
-    width: auto;
-    margin-left: 30px;
-  }
-  
-  .Game2 {
-    height: 415px;
-  }
-  
-  .gameTitle {
-    font-size: 28px;
-    font-weight: 700;
-    color: #D97D52;
-    margin-left: 65px;
-    padding: -1px;
-    margin-top: -35px;
-  }
-  
-  .boyGamepara {
-    color: #8795AA;
-    font-size: 18px;
-    font-weight: 500;
-    width: 30rem;
-    margin-left: 65px;
-  }
-  
   .googlePlay {
-    margin-left: 4rem;
+    height: 45px;
+    margin-bottom: 20px;
   }
-  
+
   .appStore {
-    margin-left: 1rem;
+    height: 45px;
+    margin-bottom: 20px;
   }
-  
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    .gameBackground {
-      height: auto;
-      width: 80%;
-      margin-left: 40px;
-      margin-top: -120px;
-    }
-  
-    .gameBoxes {
-      flex-wrap: wrap;
-    }
-  
-    .gameHeading {
-      font-size: 1.375rem;
-      padding: 35px;
-    }
-  
-    .Game1 {
-      height: 200px;
-      width: 80%;
-      margin-left: 35px;
-    }
-  
-    .gamePara {
-      font-size: 10px;
-      margin-left: 1rem;
-      text-align: center;
-      width: 18rem;
-      margin-top: -2rem;
-    }
-  
-    .gameTitle {
-      margin-left: 55px;
-      margin-top: 1px;
-      font-size: 16px;
-    }
-  
-    .boyGamepara {
-      font-size: 12px;
-      width: 18rem;
-      margin-left: 55px;
-      line-height: 20px;
-    }
-  
-    .googlePlay {
-      height: 20px;
-    }
-  
-    .appStore {
-      height: 20px;
-    }
-  
-    .Game2 {
-      height: 200px;
-      width: 80%;
-      margin-left: 35px;
-    }
-  }
-  
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .gameBackground {
-      height: 100%;
-      width: 80%;
-      margin-left: 5rem;
-      margin-top: -42rem;
-    }
-  
-    .gamePara {
-      font-size: 14px;
-      margin-left: 5rem;
-      text-align: center;
-      width: 30rem;
-    }
-  
-    .gameBoxes {
-      flex-wrap: wrap;
-    }
-  
-    .Game1 {
-      height: 350px;
-      width: auto;
-    }
-  
-    .gameTitle {
-      font-size: 20px;
-    }
-  
-    .boyGamepara {
-      font-size: 14px;
-    }
-  
-    .googlePlay {
-      height: 40px;
-    }
-  
-    .appStore {
-      height: 40px;
-    }
-  
-    .Game2 {
-      height: 350px;
-      margin-left: 30px;
-    }
-  }
-  
+}

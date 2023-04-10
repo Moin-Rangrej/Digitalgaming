@@ -6,7 +6,15 @@ import { useEffect } from 'react'
 import '../css/Stylecontactus.css'
 
 const Contactus = () => {
+    // form submit data
 
+    const submitData = (e) => {
+        e.preventDefault()
+        alert("Data submited")
+        window.location.reload()
+    }
+
+    // Animation start here
     const { ref, inView } = useInView({
         threshold: 0.2
     })
@@ -123,25 +131,26 @@ const Contactus = () => {
                     )}
                 </p>
                 <div className='contactForm'>
+                <form className='myform' onSubmit={submitData}>
                     <div className='userName'>
-                        <motion.input type='text' placeholder='First Name' className='firstName' animate={firstName} />
-                        <motion.input type='text' placeholder='Last Name' className='lastName' animate={lastName} />
+                        <motion.input type='text' placeholder='First Name' className='firstName' animate={firstName} required/>
+                        <motion.input type='text' placeholder='Last Name' className='lastName' animate={lastName} required/>
                     </div>
                     <div className='userphoneEmail'>
-                        <motion.input type='text' placeholder='Phone' className='firstName' animate={phone} />
-                        <motion.input type='text' placeholder='Email' className='lastName' animate={email} />
+                        <motion.input type='number' placeholder='Phone' className='firstName' animate={phone} required/>
+                        <motion.input type='email' placeholder='Email' className='lastName' animate={email} required/>
                     </div>
                     <div className='userMessage'>
-                        <motion.textarea placeholder='Message' className='message' animate={message} />
+                        <motion.textarea placeholder='Message' className='message' animate={message} required/>
                     </div>
                     <motion.button className='sendMessage' animate={sendMessage}
                         whileHover={{
                             scale: 1.2,
-                            // textShadow:
                             color: 'white', 
                             boxShadow: '0px 0px 10px white'
                         }}
                     >Send Message</motion.button>
+                    </form>
                 </div>
             </div>
         </>

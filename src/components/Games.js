@@ -166,9 +166,9 @@ const Games = () => {
   }, [inView])
   return (
     <>
-      <div className='gameBackground containe' id='game' ref={ref}>
+      <div className='gameBackground' id='game'>
         <motion.h1 className='gameHeading' animate={gameanimation}>Games</motion.h1>
-        <p className='gamePara'>
+        <p className='gamePara' ref={ref}>
         {inView && 
           (<Typewriter
             string='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
@@ -189,12 +189,13 @@ const Games = () => {
               In augue Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque.
               Bibendum dolor posuere felis nulla. In augue
             </motion.p>
-            <motion.img src={Googleplay} alt="Google play Icon" className='googlePlay' animate={box1button1}/>
+            <motion.img src={Googleplay} alt="Google play Icon" className='googlePlay' animate={box1button1}
+            />
             <motion.img src={Appstore} alt="App Store Icon" className='appStore' animate={box1button2}/>
           </div>
           {/* Second Game box */}
           <div className='gameBox2'>
-            <motion.img src={Game2} alt="Game Screens" className='Game2' animate={game2}/>
+            <motion.img src={Game2} alt="Game Screens" className='Game1' animate={game2}/>
             <motion.h1 className='gameTitle' animate={game2Title}>Game Title</motion.h1>
             <motion.p className='boyGamepara' animate={Game2para}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque. Bibendum dolor posuere felis nulla.

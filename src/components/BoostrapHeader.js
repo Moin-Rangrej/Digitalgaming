@@ -57,7 +57,8 @@ const BoostrapHeader = () => {
                     <span className="navbar-toggler-icon" />
                 </button>
 
-                <div className="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                <div className='container'>
+                <div className="collapse navbar-collapse p-2 " id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto text-center pagelist">
                         <li className="nav-item active">
                             <motion.a className="nav-link" href='#home'
@@ -100,6 +101,7 @@ const BoostrapHeader = () => {
                         >Contact us</motion.button>
                     </ul>
 
+                </div>
                 </div>
             </nav>
             </motion.div>

@@ -135,7 +135,7 @@ const Footer = () => {
         <div className='footerSize container'>
             <div className='row'>
                 
-                <div className='col-12' ref={ref}>
+                <div className='col-12 footer-item' ref={ref}>
                     <div className='footerPages'>
                         <motion.p animate={aboutus}>About Us</motion.p>
                         <motion.p animate={privacypolicy}>Privacy Policy</motion.p>

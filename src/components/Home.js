@@ -24,15 +24,15 @@ const Home = () => {
           duration: 1
         }
       })
-        buttonAnimation.start({
-          x: 0,
-          transition: {
-            type: 'spring',
-            stiffness: 100,
-            delay: 1,
-            duration: 1
-          }
-        })
+      buttonAnimation.start({
+        x: 0,
+        transition: {
+          type: 'spring',
+          stiffness: 100,
+          delay: 1,
+          duration: 1
+        }
+      })
     }
     if (!inView) {
       paraAnimation.start({
@@ -48,33 +48,34 @@ const Home = () => {
     <motion.div className='Digitalgame' id='home' ref={ref}>
 
       <div>
-        
+
         <span className='Digitalgame-Heading'>
-        {
-          inView &&  (
-            <Typewriter
-            string='Digital Gaming NFTs'
-            delay={50}
-            cursor='_'
-            stopBlinkinOnComplete
-          />
-          )
-        }
-           </span>
+          {
+            inView && (
+              <Typewriter
+                string='Digital Gaming NFTs'
+                delay={50}
+                cursor='_'
+                stopBlinkinOnComplete
+              />
+            )
+          }
+        </span>
+        <motion.p className='Digitalgame-para' animate={paraAnimation}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque.
+          Bibendum dolor posuere felis nulla. In augue
+        </motion.p>
+        <motion.button className='Digitalgame-btn'
+          animate={buttonAnimation}
+          whileHover={{
+            scale: 1.2,
+            color: 'black',
+            boxShadow: '0px 0px 10px white'
+          }}
+        >Read More</motion.button>
       </div>
 
-      <motion.p className='Digitalgame-para' animate={paraAnimation}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at integer pharetra duis mi neque.
-        Bibendum dolor posuere felis nulla. In augue
-      </motion.p>
-      <motion.button className='Digitalgame-btn'
-        animate={buttonAnimation}
-        whileHover={{
-          scale: 1.2,
-          color:'black',
-          boxShadow: '0px 0px 10px white'
-        }}
-      >Read More</motion.button>
+
     </motion.div>
   )
 }
